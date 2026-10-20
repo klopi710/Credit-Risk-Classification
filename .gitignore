@@ -1,0 +1,26 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Jupyter and editor state
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Recoverable local review and save-conflict backups
+review/save-conflict-backups/
+reports/save-conflict-backups/
+
+# Office lock files and temporary documents
+.~lock.*
+*.pptx#
+~$*
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini

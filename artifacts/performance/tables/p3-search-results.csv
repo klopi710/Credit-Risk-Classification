@@ -1,0 +1,4 @@
+search,best_capacity_f1_cv,model__solver,model__class_weight,model__C,model__n_estimators,model__min_samples_leaf,model__max_features,model__max_depth,model__max_leaf_nodes,model__max_iter,model__learning_rate,model__l2_regularization
+logistic_search,0.535,liblinear,balanced,100.0,,,,,,,,
+random_forest_search,0.515,,balanced,,300.0,20.0,log2,,,,,
+hist_gradient_boosting_search,0.51,,,,,30.0,,,15.0,250.0,0.02,10.0

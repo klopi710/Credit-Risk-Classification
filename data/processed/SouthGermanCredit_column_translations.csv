@@ -1,0 +1,22 @@
+english_column,source_code,role,type_used_by_model
+existing checking-account status,laufkont,predictor,categorical
+loan duration in months,laufzeit,predictor,numeric
+credit history,moral,predictor,categorical
+loan purpose,verw,predictor,categorical
+credit amount,hoehe,predictor,numeric
+savings account or bonds,sparkont,predictor,categorical
+employment duration,beszeit,predictor,categorical
+installment rate as percentage of disposable income,rate,predictor,categorical
+personal status and sex code,famges,predictor,categorical
+other debtors or guarantors,buerge,predictor,categorical
+years at present residence,wohnzeit,predictor,categorical
+property status,verm,predictor,categorical
+age in years,alter,predictor,numeric
+other installment plans,weitkred,predictor,categorical
+housing status,wohn,predictor,categorical
+number of existing credits at this bank,bishkred,predictor,categorical
+job category,beruf,predictor,categorical
+number of people financially liable for,pers,predictor,categorical
+telephone status,telef,predictor,categorical
+foreign-worker code,gastarb,predictor,categorical
+historical credit-risk target,kredit,target,target

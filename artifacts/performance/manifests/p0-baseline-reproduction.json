@@ -1,0 +1,27 @@
+{
+  "average_precision": {
+    "new": 0.6070922540653295,
+    "previous": 0.6070922540653295,
+    "match": true
+  },
+  "roc_auc": {
+    "new": 0.7889136904761904,
+    "previous": 0.7889136904761904,
+    "match": true
+  },
+  "precision": {
+    "new": 0.6491228070175439,
+    "previous": 0.6491228070175439,
+    "match": true
+  },
+  "recall": {
+    "new": 0.30833333333333335,
+    "previous": 0.3083333333333333,
+    "match": true
+  },
+  "f1": {
+    "new": 0.4180790960451977,
+    "previous": 0.4180790960451977,
+    "match": true
+  }
+}

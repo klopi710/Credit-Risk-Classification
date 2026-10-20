@@ -1,0 +1,78 @@
+{
+  "created_at_utc": "2026-10-05T11:08:21.005808+00:00",
+  "scope": "Performance improvement Block P-A: P0-P3",
+  "test_used": false,
+  "raw_source_sha256": "5f363343f356ca38a0236baab849e472846399b2176ccc5bd686483dd8a7562f",
+  "development_rows": 800,
+  "environment": {
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.1",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "p0_reproduction": {
+    "average_precision": {
+      "new": 0.6070922540653295,
+      "previous": 0.6070922540653295,
+      "match": true
+    },
+    "roc_auc": {
+      "new": 0.7889136904761904,
+      "previous": 0.7889136904761904,
+      "match": true
+    },
+    "precision": {
+      "new": 0.6491228070175439,
+      "previous": 0.6491228070175439,
+      "match": true
+    },
+    "recall": {
+      "new": 0.30833333333333335,
+      "previous": 0.3083333333333333,
+      "match": true
+    },
+    "f1": {
+      "new": 0.4180790960451977,
+      "previous": 0.4180790960451977,
+      "match": true
+    }
+  },
+  "p1_p2": {
+    "cv": "RepeatedStratifiedKFold 5x3",
+    "capacity_fraction": 0.2,
+    "summary": "p1-p2-repeated-capacity-summary.csv"
+  },
+  "p3": {
+    "logistic_search": {
+      "best_score": 0.535,
+      "best_params": {
+        "model__solver": "liblinear",
+        "model__class_weight": "balanced",
+        "model__C": 100.0
+      }
+    },
+    "random_forest_search": {
+      "best_score": 0.515,
+      "best_params": {
+        "model__n_estimators": 300,
+        "model__min_samples_leaf": 20,
+        "model__max_features": "log2",
+        "model__max_depth": null,
+        "model__class_weight": "balanced"
+      }
+    },
+    "hist_gradient_boosting_search": {
+      "best_score": 0.51,
+      "best_params": {
+        "model__min_samples_leaf": 30,
+        "model__max_leaf_nodes": 15,
+        "model__max_iter": 250,
+        "model__learning_rate": 0.02,
+        "model__l2_regularization": 10.0
+      }
+    }
+  },
+  "status": "P-A complete; P4-P8 not executed"
+}
