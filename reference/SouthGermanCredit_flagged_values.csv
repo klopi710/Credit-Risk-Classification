@@ -1,0 +1,119 @@
+row_id,english_column,value,reference_range,method,iqr_flagged,z_score_flagged,review_decision
+167,age in years,74,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR + z-score,True,True,valid-looking extreme; retained
+259,age in years,74,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR + z-score,True,True,valid-looking extreme; retained
+422,age in years,68,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR,True,False,valid-looking extreme; retained
+452,age in years,70,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR + z-score,True,True,valid-looking extreme; retained
+479,age in years,67,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR,True,False,valid-looking extreme; retained
+602,age in years,75,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR + z-score,True,True,valid-looking extreme; retained
+624,age in years,75,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR + z-score,True,True,valid-looking extreme; retained
+704,age in years,67,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR,True,False,valid-looking extreme; retained
+960,age in years,68,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR,True,False,valid-looking extreme; retained
+977,age in years,68,IQR: 2 to 66; z-score: 1.45096 to 69.304,IQR,True,False,valid-looking extreme; retained
+63,credit amount,10875,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+182,credit amount,8072,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+192,credit amount,8487,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+208,credit amount,12169,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+223,credit amount,8613,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+232,credit amount,8588,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+241,credit amount,10366,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+355,credit amount,10477,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+382,credit amount,13756,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+426,credit amount,11760,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+442,credit amount,14179,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+521,credit amount,10974,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+525,credit amount,9566,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+556,credit amount,8358,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+566,credit amount,9857,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+569,credit amount,10222,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+571,credit amount,9055,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+575,credit amount,12204,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+600,credit amount,8229,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+616,credit amount,10623,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+645,credit amount,15857,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+695,credit amount,15653,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+700,credit amount,8335,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+702,credit amount,8471,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+728,credit amount,11054,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+729,credit amount,9157,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+730,credit amount,9283,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+754,credit amount,14555,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+773,credit amount,9271,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+780,credit amount,8386,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+782,credit amount,14318,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+810,credit amount,15672,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+820,credit amount,10961,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+835,credit amount,11560,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+843,credit amount,11328,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+844,credit amount,11938,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+847,credit amount,14782,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+849,credit amount,12612,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+867,credit amount,9398,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+873,credit amount,9572,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+890,credit amount,14027,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+891,credit amount,9629,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+895,credit amount,12976,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+939,credit amount,8086,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+940,credit amount,10127,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+943,credit amount,12389,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+953,credit amount,11590,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+965,credit amount,9960,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+966,credit amount,8648,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+971,credit amount,8318,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR,True,False,valid-looking extreme; retained
+975,credit amount,11998,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+976,credit amount,18424,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+977,credit amount,14896,IQR: -2639.5 to 8024.5; z-score: -5198.25 to 11722.1,IQR + z-score,True,True,valid-looking extreme; retained
+13,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+62,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+158,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+192,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+199,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+208,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+241,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+352,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+382,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+405,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+541,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+556,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+562,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+569,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+575,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+608,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+643,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+647,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+654,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+695,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+698,loan duration in months,45,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+708,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+716,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+719,loan duration in months,72,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+720,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+729,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+731,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+763,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+807,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+810,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+811,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+820,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+826,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+829,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+847,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+855,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+860,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+861,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+870,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+877,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+882,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+885,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+890,loan duration in months,60,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR + z-score,True,True,valid-looking extreme; retained
+909,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+918,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+919,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+940,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+950,loan duration in months,45,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+953,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+965,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+968,loan duration in months,45,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+970,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+976,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+982,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained
+984,loan duration in months,48,IQR: -6 to 42; z-score: -15.1692 to 56.9017,IQR,True,False,valid-looking extreme; retained

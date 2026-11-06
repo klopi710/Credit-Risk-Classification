@@ -17,52 +17,52 @@ This is a review-prioritisation aid, not an automatic approval or rejection syst
 The following figures use the development estimate scaled from 800 development cases to 8,000 monthly applications. The model selected 160 of 800 development cases, which becomes 1,600 of 8,000.
 
 **Reviews: 1,600**  
-(8,000 applications x 20% capacity = maximum monthly reviews)
+(8,000 x 20% = 1,600; applications x review capacity = maximum monthly reviews)
 
 **True positives: 1,010**  
-(101 development TP x 10 = scale from 800 development cases to 8,000 applications)
+(101 x 10 = 1,010; development TP scaled from 800 to 8,000 applications)
 
 **False positives: 590**  
-(59 development FP x 10 = scale from 800 development cases to 8,000 applications)
+(59 x 10 = 590; development FP scaled from 800 to 8,000 applications)
 
 **False negatives: 1,390**  
-(139 development FN x 10 = scale from 800 development cases to 8,000 applications)
+(139 x 10 = 1,390; development FN scaled from 800 to 8,000 applications)
 
 **True negatives: 5,010**  
-(501 development TN x 10 = scale from 800 development cases to 8,000 applications)
+(501 x 10 = 5,010; development TN scaled from 800 to 8,000 applications)
 
 **Accuracy: 75.3%**  
-((TP + TN) / total applications = correct predictions divided by all applications)
+((1,010 + 5,010) / 8,000 = 75.3%; correct predictions divided by all applications)
 
 **Precision: 63.1%**  
-(TP / (TP + FP) = true positives divided by all flagged applications)
+(1,010 / (1,010 + 590) = 63.1%; true positives divided by all flagged applications)
 
 **Recall: 42.1%**  
-(TP / (TP + FN) = captured bad-risk cases divided by all bad-risk cases)
+(1,010 / (1,010 + 1,390) = 42.1%; captured bad-risk cases divided by all bad-risk cases)
 
 **F1: 50.5%**  
-(2 x precision x recall / (precision + recall) = combines precision and recall)
+(2 x 63.1% x 42.1% / (63.1% + 42.1%) = 50.5%; combines precision and recall)
 
 **Expected defaults prevented: 454.5**  
-(TP x review effectiveness = expected events prevented by human review)
+(1,010 x 45% = 454.5; TP x review effectiveness = expected events prevented)
 
 **Gross loss avoided: EUR 2,727,000**  
-(expected events prevented x LGD = gross loss avoided)
+(454.5 x EUR 6,000 = EUR 2,727,000; expected events prevented x LGD)
 
 **Review cost: EUR 56,000**  
-(number of reviews x cost per review = total review cost)
+(1,600 x EUR 35 = EUR 56,000; number of reviews x cost per review)
 
 **Expected friction loss: EUR 35,400**  
-(FP x abandonment rate x contribution = expected friction loss)
+(590 x 5% x EUR 1,200 = EUR 35,400; FP x abandonment rate x contribution)
 
 **Conditional net screening value: EUR 2,635,600**  
-(gross loss avoided minus both costs = conditional net screening value)
+(EUR 2,727,000 - EUR 56,000 - EUR 35,400 = EUR 2,635,600; gross loss avoided minus both costs)
 
 **Cost per expected default prevented: EUR 123.21**  
-(total review cost divided by expected events prevented)
+(EUR 56,000 / 454.5 = EUR 123.21; total review cost divided by expected events prevented)
 
 **Missed avoidable loss: EUR 3,753,000**  
-(FN x review effectiveness x LGD = missed avoidable loss)
+(1,390 x 45% x EUR 6,000 = EUR 3,753,000; FN x review effectiveness x LGD)
 
 Model-running cost is not quantified and is therefore treated as zero in this scenario. The net screening value is not proven profit; it is conditional arithmetic based on the review-effectiveness, LGD, cost and abandonment assumptions.
 
@@ -77,34 +77,36 @@ They should not be added together. The first is a net value estimate for the pol
 
 ### What changes if recall rises while precision falls?
 
-The queue captures more historical bad-risk cases, which can reduce missed avoidable loss. However, more good/performing applicants are also sent to review. The credit team receives more false positives, workload and friction; applicants may experience delays or abandon the process. With a hard 1,600-review capacity, a lower threshold cannot simply be used unless capacity is increased or the queue is re-optimised.
+Recall is how many of the positive classes we capture. In my opinion the most important metric.
+Precision is out of all the positive class predictions (sent for human review) how many were actually in the positive class (were actually needed to be sent).
+
+Higher recall while lower precision means we likely send more people for human review - and as such we are capturing more of the positive class but at higher cost.
 
 ### Which error is more expensive?
 
-Under the base-case assumptions:
+- One false negative = expected loss of 45% x EUR 6,000 = EUR 2,700.
+- One false positive = expected loss of 5% x EUR 1,200 = EUR 60.
 
-- One false negative carries an expected missed-loss amount of 45% x EUR 6,000 = EUR 2,700.
-- One false positive carries an expected friction amount of 5% x EUR 1,200 = EUR 60.
-
-Therefore a false negative is treated as **45 times more expensive** than a false positive in the scenario. This does not prove the real causal cost; actual review effectiveness and LGD must be measured prospectively.
+Therefore a false negative is potentially **45 times more expensive** than a false positive in the scenario. This alone is not definitive, but enough to priortise minimising false negatives.
 
 ### Why does prevalence matter?
 
-Precision depends on how common bad-risk cases are. If the ranking quality and 1,600-review capacity stay unchanged but the portfolio has more bad-risk applicants, the queue will usually contain more true positives and precision will rise. If bad-risk prevalence falls, precision will usually fall. The historical dataset has approximately 30% bad-risk cases, but that prevalence may not represent a modern portfolio.
+Because that is what all our metrics depend on.
+Prevalence = how many positive classes we have in the dataset > how many bad-risk cases.
+In our case, 30%, if that was higher, our models should capture more of them since they are more "prevailent". And vice versa.
 
 ### Which policy should be used?
 
-Use an exact **top-k ranking rule**: rank all applications by bad-risk score and review the highest-risk 20%. This directly respects the 1,600-review capacity. A fixed probability threshold is only a reference boundary because the score is not externally calibrated. A segmented policy could be studied later, but it would require larger, time-valid data and governance analysis.
+Rank bad-risk value (0-1) in descending order, send the top 20% for human review.
+As they will be the highest risk for default, we should focus on them given our limited capacity.
 
 ### What information is missing?
 
-- Observed modern outcomes and a defined 12-month default horizon.
-- Applicant-level exposure, recovery and real LGD.
-- The causal effect of human review on default prevention.
-- Feature availability timestamps and review eligibility.
-- Future portfolio prevalence and drift.
-- Larger, time-valid data for subgroup and governance analysis.
-
+- Did the default occur at any of them?
+- Was the loan actually given? For how long?
+- Do all defaults create the same loss? Unlikely.
+- Economic conditions may also be useful > recession = higher defaults = higher risk
+- A lot more data than 1000 rows.
 
 ## Slide 4 - Technical Explanation
 

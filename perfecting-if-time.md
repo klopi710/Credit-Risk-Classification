@@ -8,6 +8,8 @@ Tier 1
 <p>Before rollout, measure electricity, compute, cybersecurity and storage costs. Use the model as a supplement to human reviewers. RAG may support policy and case-document retrieval; LLM fine-tuning should wait until enough reviewed text exists and its benefit is tested.</p>
 </div>
 
+- What information is missing question
+
 Suggested decision formula:
 
 `Scenario net policy value = sum(review: p_bad × review effectiveness × LGD - review cost - (1 - p_bad) × abandonment rate × contribution) - all-applications × model-running cost.`

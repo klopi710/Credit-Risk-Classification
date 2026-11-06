@@ -8,7 +8,7 @@
   "test_rows": 200,
   "feature_count": 71,
   "target": "bad_default_risk",
-  "train_dataset": "C:\\Users\\katom\\iCloudDrive\\Smaller Creator\\Sky\\Marc Torrens Assignment\\data\\processed\\train_onehot_v1.csv",
-  "test_dataset": "C:\\Users\\katom\\iCloudDrive\\Smaller Creator\\Sky\\Marc Torrens Assignment\\data\\processed\\test_onehot_v1.csv",
-  "feature_map": "C:\\Users\\katom\\iCloudDrive\\Smaller Creator\\Sky\\Marc Torrens Assignment\\data\\processed\\feature_map_onehot_v1.csv"
+  "train_dataset": "c:\\Users\\katom\\iCloudDrive\\Smaller Creator\\Sky\\Marc Torrens Assignment\\data\\processed\\train_onehot_v1.csv",
+  "test_dataset": "c:\\Users\\katom\\iCloudDrive\\Smaller Creator\\Sky\\Marc Torrens Assignment\\data\\processed\\test_onehot_v1.csv",
+  "feature_map": "c:\\Users\\katom\\iCloudDrive\\Smaller Creator\\Sky\\Marc Torrens Assignment\\data\\processed\\feature_map_onehot_v1.csv"
 }

@@ -23,3 +23,15 @@ py -m jupyter lab notebooks\credit_risk_assignment.ipynb
 ```
 
 The editable deck source is `slides/credit-risk-business-deck.md`. No automatic lending decision or external deployment is in scope.
+
+---
+To preview the md files, in VS code; CTRL + SHIFT + V.
+
+First results are shown then explanation. (paper in neuorscience; "Questions are the answer"). 
+Example; 
+![1792328514864](image/readme/1792328514864.png)
+
+For the reader it is advised to to open in parralel "plan.md" as the execution follows the plan step by step. Following, the most important files are;
+- plan.md
+- notebooks/main.v4.ipynb
+- reports/genai-use-manual.md
